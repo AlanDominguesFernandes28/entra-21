@@ -18,4 +18,9 @@ else if (opcaoDesejada == 2)
     ExercicioWhile02 Atividade = new ExercicioWhile02();
     Atividade.Executar();
 }
-else if
+else if (opcaoDesejada == 3)
+{
+    ExercicioWhile03 Atividade = new ExercicioWhile03();
+    Atividade.Executar();
+}
+

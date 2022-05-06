@@ -15,6 +15,10 @@ namespace Entra21.ExerciciosWhile
             int indice = 0;
 
             while (indice = 13)
+                Console.Write("ta errado tirar");
+
+
+
         }
     }
 }
