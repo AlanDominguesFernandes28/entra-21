@@ -6,26 +6,20 @@ using System.Threading.Tasks;
 
 namespace Entra21.ExerciciosWhile
 {
-    internal class ExercicioWhile01
+    internal class ExercicioWhile02
     {
+
         public void Executar()
         {
-            double preco = 0;
             string nome = "";
             int indice = 0;
 
-            while (indice < 13)
+            while (nome != "fim")
             {
-                Console.WriteLine("Digite o nome da peça");
+                Console.Write("Digite o nome: \n");
                 nome = Console.ReadLine();
-                Console.WriteLine("Digite o preço da peça");
-                preco = Convert.ToDouble(Console.ReadLine());
                 indice = indice + 1;
-
             }
-
-
-
 
         }
     }

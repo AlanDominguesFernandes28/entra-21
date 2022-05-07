@@ -5,7 +5,7 @@ Console.WriteLine(@"---------------MENU------------
 2-Exercicio 02
 3-Exercicio 03");
 
-Console.Write("Digite a opção desejada");
+Console.Write("Digite a opção desejada: ");
 int opcaoDesejada = Convert.ToInt32(Console.ReadLine());
 
 if (opcaoDesejada == 1)
@@ -23,4 +23,4 @@ else if (opcaoDesejada == 3)
     ExercicioWhile03 Atividade = new ExercicioWhile03();
     Atividade.Executar();
 }
-
+*/
