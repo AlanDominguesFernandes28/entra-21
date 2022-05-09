@@ -20,7 +20,14 @@ namespace Entra21.ExerciciosWhile
                 nome = Console.ReadLine();
                 indice = indice + 1;
             }
-
         }
     }
 }
+
+
+
+
+
+
+
+

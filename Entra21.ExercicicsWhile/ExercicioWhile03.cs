@@ -17,11 +17,11 @@ namespace Entra21.ExerciciosWhile
             while (idade <= 128)
             {
                 Console.WriteLine("Digite a idade");
-                int idade = Convert.ToInt32(Console.ReadLine());
+                idade = Convert.ToInt32(Console.ReadLine());
                 indice = indice + 1;
             }
-                
-            
+
+        }   
 
 
 
