@@ -46,7 +46,7 @@ else if (opcaoDesejada == 5)
 {
     ExercicioWhile05 Atividade = new ExercicioWhile05();
     Atividade.Executar();
-}
+}/*
 else if (opcaoDesejada == 6)
 {
     ExercicioWhile06 Atividade = new ExercicioWhile06();
@@ -71,9 +71,14 @@ else if (opcaoDesejada == 10)
 {
     ExercicioWhile10 Atividade = new ExercicioWhile10();
     Atividade.Executar();
-}
+}*/
 else if (opcaoDesejada == 11)
 {
     ExercicioWhile11 Atividade = new ExercicioWhile11();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 12)
+{
+    ExercicioWhile12 Atividade = new ExercicioWhile12();
     Atividade.Executar();
 }
