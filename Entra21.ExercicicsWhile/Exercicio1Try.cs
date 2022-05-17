@@ -14,7 +14,7 @@ namespace Entra21.ExerciciosWhile
             var preco = 0.0;
             int indice = 0;
 
-            while (indice <= 0) ;
+            while (indice <  13)
             {
                 try
                 {
@@ -29,11 +29,8 @@ namespace Entra21.ExerciciosWhile
                     Console.WriteLine("Digito esta invalido");
 
                 }
+                indice = indice + 1;
             }
-
-
-
-
         }
     }
 }

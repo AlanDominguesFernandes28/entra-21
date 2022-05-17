@@ -16,7 +16,9 @@ Console.WriteLine(@"---------------MENU------------
 
 Lista 2
 
-21-Exercicio 01");
+21-Exercicio 01
+22-Exercicio 02
+23-Exercicio 03");
 
 
 
@@ -90,5 +92,15 @@ else if (opcaoDesejada == 12)
 else if (opcaoDesejada == 21)
 {
     Exercicio1Try Atividade = new Exercicio1Try();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 22)
+{
+    Exercicio2Try Atividade = new Exercicio2Try();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 23)
+{
+    Exercicio3Try Atividade = new Exercicio3Try();
     Atividade.Executar();
 }
