@@ -18,7 +18,10 @@ Lista 2
 
 21-Exercicio 01
 22-Exercicio 02
-23-Exercicio 03");
+23-Exercicio 03
+24-Exercicio 04
+25-Exercicio 05
+26-Exercicio 06");
 
 
 
@@ -102,5 +105,20 @@ else if (opcaoDesejada == 22)
 else if (opcaoDesejada == 23)
 {
     Exercicio3Try Atividade = new Exercicio3Try();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 24)
+{
+    Exercicio4Try Atividade = new Exercicio4Try();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 25)
+{
+    Exercicio5Try Atividade = new Exercicio5Try();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 26)
+{
+    Exercicio6Try Atividade = new Exercicio6Try();
     Atividade.Executar();
 }
