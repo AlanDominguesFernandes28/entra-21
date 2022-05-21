@@ -49,7 +49,7 @@ namespace Entra21.ExerciciosWhile
             var totalpedidos = 0;
             var quantidadeConsumido = 0;
             var totalBolo = 0;
-            var totalDoce =0
+            var totalDoce = 0;
             var totalSanduiche = 0;
             var totalPizza = 0;
             var quantidade = 0;

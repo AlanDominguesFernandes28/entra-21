@@ -21,7 +21,25 @@ Lista 2
 23-Exercicio 03
 24-Exercicio 04
 25-Exercicio 05
-26-Exercicio 06");
+26-Exercicio 06
+
+
+lista 3
+
+30-Exercicio 01
+31-Exercicio 02
+32-Exercicio 03
+33-Exercicio 04
+
+
+
+
+
+
+
+
+100-ExemplosPROF 01");
+
 
 
 
@@ -81,7 +99,7 @@ else if (opcaoDesejada == 10)
 {
     ExercicioWhile10 Atividade = new ExercicioWhile10();
     Atividade.Executar();
-}*/
+}
 else if (opcaoDesejada == 11)
 {
     ExercicioWhile11 Atividade = new ExercicioWhile11();
@@ -101,7 +119,7 @@ else if (opcaoDesejada == 22)
 {
     Exercicio2Try Atividade = new Exercicio2Try();
     Atividade.Executar();
-}
+}*/
 else if (opcaoDesejada == 23)
 {
     Exercicio3Try Atividade = new Exercicio3Try();
@@ -120,5 +138,30 @@ else if (opcaoDesejada == 25)
 else if (opcaoDesejada == 26)
 {
     Exercicio6Try Atividade = new Exercicio6Try();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 30)
+{
+    Exercicio01Vetor Atividade = new Exercicio01Vetor();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 31)
+{
+    Exercicio02Vetor Atividade = new Exercicio02Vetor();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 32)
+{
+    Exercicio03Vetor Atividade = new Exercicio03Vetor();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 33)
+{
+    Exercicio04Vetor Atividade = new Exercicio04Vetor();
+    Atividade.Executar();
+}
+else if (opcaoDesejada == 100)
+{
+    Exemplo01Tabela Atividade = new Exemplo01Tabela();
     Atividade.Executar();
 }
