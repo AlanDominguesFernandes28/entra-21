@@ -5,11 +5,13 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosWhile", "Entra21.ExercicicsWhile\Entra21.ExerciciosWhile.csproj", "{0D556C03-5D07-4740-83F8-9A9935995FDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosOrientacaoObjeto", "ExerciciosOrientacaoObjeto\ExerciciosOrientacaoObjeto.csproj", "{79576ACE-F560-4BFE-88CA-B1F1CEBD48DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciciosOrientacaoObjeto", "ExerciciosOrientacaoObjeto\ExerciciosOrientacaoObjeto.csproj", "{79576ACE-F560-4BFE-88CA-B1F1CEBD48DD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemploOrientacaoObjeto", "Entra21.ExemploOrientacaoObjeto\Entra21.ExemploOrientacaoObjeto.csproj", "{B08DCE1F-852D-4027-BF17-748533254FC0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemploOrientacaoObjeto.Tests", "Entra21.ExemploOrientacaoObjeto.Tests\Entra21.ExemploOrientacaoObjeto.Tests.csproj", "{309BD893-92C4-4BAD-AEDF-3CBEBB7E9E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosOrientacaoObjetoTests", "ExerciciosOrientacaoObjetoTests\ExerciciosOrientacaoObjetoTests.csproj", "{3F7A823A-44E8-4A5A-B680-79DC4EB96E98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{309BD893-92C4-4BAD-AEDF-3CBEBB7E9E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{309BD893-92C4-4BAD-AEDF-3CBEBB7E9E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{309BD893-92C4-4BAD-AEDF-3CBEBB7E9E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7A823A-44E8-4A5A-B680-79DC4EB96E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7A823A-44E8-4A5A-B680-79DC4EB96E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7A823A-44E8-4A5A-B680-79DC4EB96E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7A823A-44E8-4A5A-B680-79DC4EB96E98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
