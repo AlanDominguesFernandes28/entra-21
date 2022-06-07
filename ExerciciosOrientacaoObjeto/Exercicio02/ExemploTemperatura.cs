@@ -11,12 +11,12 @@ namespace ExerciciosOrientacaoObjeto.Exercicio02
         public void Executar()
         {
             Temperatura temperatura = new Temperatura();
-
+           
             temperatura.TemperaturaOrigem = "celsius";
             temperatura.TemperaturaDestino = "kelvin";
-            temperatura.ValorTemperatura = 10;
+            temperatura.ValorTemperatura = 30;
 
-            temperatura.Conversor();
+            Console.WriteLine("Temperatura convertida: " + temperatura.ObterTemperaturaConvertida());
 
 
 
