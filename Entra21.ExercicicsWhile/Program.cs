@@ -31,6 +31,12 @@ lista 3
 32-Exercicio 03
 33-Exercicio 04
 
+lista 4
+
+40-Exercicio 01
+41-Exercicio 02
+42-Exercicio 03
+
 
 
 
@@ -74,94 +80,109 @@ else if (opcaoDesejada == 5)
 {
     ExercicioWhile05 Atividade = new ExercicioWhile05();
     Atividade.Executar();
-}/*
-else if (opcaoDesejada == 6)
-{
-    ExercicioWhile06 Atividade = new ExercicioWhile06();
-    Atividade.Executar();
 }
-else if (opcaoDesejada == 7)
-{
-    ExercicioWhile07 Atividade = new ExercicioWhile07();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 8)
-{
-    ExercicioWhile08 Atividade = new ExercicioWhile08();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 9)
-{
-    ExercicioWhile09 Atividade = new ExercicioWhile09();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 10)
-{
-    ExercicioWhile10 Atividade = new ExercicioWhile10();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 11)
-{
-    ExercicioWhile11 Atividade = new ExercicioWhile11();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 12)
-{
-    ExercicioWhile12 Atividade = new ExercicioWhile12();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 21)
-{
-    Exercicio1Try Atividade = new Exercicio1Try();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 22)
-{
-    Exercicio2Try Atividade = new Exercicio2Try();
-    Atividade.Executar();
-}*/
-else if (opcaoDesejada == 23)
-{
-    Exercicio3Try Atividade = new Exercicio3Try();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 24)
-{
-    Exercicio4Try Atividade = new Exercicio4Try();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 25)
-{
-    Exercicio5Try Atividade = new Exercicio5Try();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 26)
-{
-    Exercicio6Try Atividade = new Exercicio6Try();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 30)
-{
-    Exercicio01Vetor Atividade = new Exercicio01Vetor();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 31)
-{
-    Exercicio02Vetor Atividade = new Exercicio02Vetor();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 32)
-{
-    Exercicio03Vetor Atividade = new Exercicio03Vetor();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 33)
-{
-    Exercicio04Vetor Atividade = new Exercicio04Vetor();
-    Atividade.Executar();
-}
-else if (opcaoDesejada == 100)
-{
-    Exemplo01Tabela Atividade = new Exemplo01Tabela();
-    Atividade.Executar();
-}
+//else if (opcaoDesejada == 6)
+//{
+//    ExercicioWhile06 Atividade = new ExercicioWhile06();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 7)
+//{
+//    ExercicioWhile07 Atividade = new ExercicioWhile07();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 8)
+//{
+//    ExercicioWhile08 Atividade = new ExercicioWhile08();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 9)
+//{
+//    ExercicioWhile09 Atividade = new ExercicioWhile09();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 10)
+//{
+//    ExercicioWhile10 Atividade = new ExercicioWhile10();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 11)
+//{
+//    ExercicioWhile11 Atividade = new ExercicioWhile11();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 12)
+//{
+//    ExercicioWhile12 Atividade = new ExercicioWhile12();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 21)
+//{
+//    Exercicio1Try Atividade = new Exercicio1Try();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 22)
+//{
+//    Exercicio2Try Atividade = new Exercicio2Try();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 23)
+//{
+//    Exercicio3Try Atividade = new Exercicio3Try();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 24)
+//{
+//    Exercicio4Try Atividade = new Exercicio4Try();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 25)
+//{
+//    Exercicio5Try Atividade = new Exercicio5Try();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 26)
+//{
+//    Exercicio6Try Atividade = new Exercicio6Try();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 30)
+//{
+//    Exercicio01Vetor Atividade = new Exercicio01Vetor();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 31)
+//{
+//    Exercicio02Vetor Atividade = new Exercicio02Vetor();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 32)
+//{
+//    Exercicio03Vetor Atividade = new Exercicio03Vetor();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 33)
+//{
+//    Exercicio04Vetor Atividade = new Exercicio04Vetor();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 100)
+//{
+//    Exemplo01Tabela Atividade = new Exemplo01Tabela();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 40)
+//{
+//    ExercicioLista01 Atividade = new ExercicioLista01();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 41)
+//{
+//    ExercicioLista02 Atividade = new ExercicioLista02();
+//    Atividade.Executar();
+//}
+//else if (opcaoDesejada == 42)
+//{
+//    ExercicioLista03 Atividade = new ExercicioLista03();
+//    Atividade.Executar();
+//}
