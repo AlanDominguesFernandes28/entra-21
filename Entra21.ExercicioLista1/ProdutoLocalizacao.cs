@@ -1,6 +1,6 @@
 ﻿namespace Entra21.ExercicioLista1
 {
-    internal enum ProdutoLocalizacao
+    internal enum  ProdutoLocalizacao
     {
         AreaVenda,
         Loja,
