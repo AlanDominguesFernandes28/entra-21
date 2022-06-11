@@ -19,19 +19,38 @@ namespace ExercicioListaObjetos.Exercicio1
         public int lado3;
         public int codigo;
 
-    }
-    public int ValidarTriangulo()
-    {
-        if(lado1 > lado2 && lado3)
-        {
-            return true;
-        }
-        else
-        {
-
-        }
-
         
 
+        public bool ValidarTriangulo(int lado1, int lado2,int lado3)
+        {
+            if ((lado1 < lado2 + lado3) && (lado2 < lado1 + lado3) && (lado3 < lado1 + lado2))
+            {
+                
+                return true;
+            }
+            else
+            {
+                
+                return false;
+            }
+            
+
+
+        }
+
+        internal void Add(Triangulo triangulo)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void Remove(Triangulo triangulo)
+        {
+            throw new NotImplementedException();
+        }
     }
+
+
+
+
+
 }
