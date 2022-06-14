@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosWhile", "Entra21.ExercicicsWhile\Entra21.ExerciciosWhile.csproj", "{0D556C03-5D07-4740-83F8-9A9935995FDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosWhileTryVetor", "Entra21.ExercicicsWhile\Entra21.ExerciciosWhileTryVetor.csproj", "{0D556C03-5D07-4740-83F8-9A9935995FDB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciciosOrientacaoObjeto", "ExerciciosOrientacaoObjeto\ExerciciosOrientacaoObjeto.csproj", "{79576ACE-F560-4BFE-88CA-B1F1CEBD48DD}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciciosOrientacaoObjetoT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExercicioLista1", "Entra21.ExercicioLista1\Entra21.ExercicioLista1.csproj", "{F14AD9CD-9DBC-4F23-B2E7-7C7C5E819DE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioListaObjetos", "ExercicioListaObjetos\ExercicioListaObjetos.csproj", "{30D4F632-EA91-46B6-B106-5FA46A69BE8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioListaObjetos", "ExercicioListaObjetos\ExercicioListaObjetos.csproj", "{30D4F632-EA91-46B6-B106-5FA46A69BE8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
