@@ -9,15 +9,18 @@ namespace ExercicioListaObjetos.Exercicio1
     //CRUD
     internal class TrianguloControlador
     {
+        private TrianguloServico trianguloServico = new TrianguloServico();
+
         public void GerenciarMenu()
         {
             int codigo = 0;
+
 
             while (codigo != 6)
             {
                 Console.Clear();
 
-                codigo = ApresentarSolicitarMenu();
+                codigo = ApresentarMenu();
 
                 if (codigo == 1)
                 {
@@ -45,58 +48,90 @@ namespace ExercicioListaObjetos.Exercicio1
                 Thread.Sleep(1000);
             }
         }
-        private int ApresentarSolicitarMenu()
+        public int ApresentarMenu()
         {
             Console.WriteLine(@" Menu:
-             1- Listar todos
-             2- Cadastrar
-             3- Editar
-             4- Apagar
-             5-Apresentar produto desejado
-             6-Sair");
+             1-Apresentar Triangulo
+             2-Cadastrar
+             3-Editar
+             4-Apagar
+             5-sair");
+
+            var opcaoDesejada = Convert.ToInt32(Console.ReadLine());
+
+            return opcaoDesejada;
         }
-        private void Cadastrar()
+        public void Cadastrar()
         {
-            Console.Write("Digite o lado do triangulo ");
+            Console.Write("Digite o lado1 do triangulo ");
             var triangulo = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Digite o lado do triangulo ");
+            Console.Write("Digite o lado2 do triangulo ");
             var triangulo1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Digite o lado do triangulo ");
+            Console.Write("Digite o lado3 do triangulo ");
             var triangulo2 = Convert.ToInt32(Console.ReadLine());
         }
-        private void Editar()
+
+        public void Editar()
         {
             Console.WriteLine("Codigo desejado: ");
             var codigo = Convert.ToInt32(Console.ReadLine());
 
         }
-        private void Apagar()
+        public void Apagar()
         {
-
             ApresentarTriangulo();
 
-            Console.WriteLine("Digite o Codigo do triangulo para apagar: ");
-            int codigo = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Por favor informe o código do triângulo que você deseja apagar: ");
+            var codigo = Convert.ToInt32(Console.ReadLine().Trim());
 
-            var registroApagado = trianguloServico.Apagar(codigo);
-            Console.WriteLine(registroApagado == true
-                                                ? " Registro removido com sucesso"
-                                                : " nenhum produto cadastrado com o codigo informado");
+            var ApagarTriangulo = trianguloServico.Apagar(codigo);
+
+            if (ApagarTriangulo == false)
+            {
+                Console.WriteLine(@"
+                Código digitado não existe.");
+            }
+            else
+            {
+                Console.WriteLine(@"
+                Triângulo apagado com sucesso.");
+            }
         }
-        private void ApresentarTriangulo()
+
+        private void ApresentarTodos()
         {
-            ApresentarTriangulo();
+            var triangulos = trianguloServico.ObterTodos();
+
+            if (triangulos.Count == 0)
+            {
+                Console.WriteLine("Nenhum triângulo cadastrado.");
+
+                return;
+            }
+
+            Console.WriteLine("Lista de triângulos:");
+
+            for (var i = 0; i < triangulos.Count(); i++)
+            {
+                var trianguloAtual = triangulos[i];
+
+                Console.WriteLine($@"Código {trianguloAtual.codigo}");
+            }
+        }
+        public void ApresentarTriangulo()
+        {
+            ApresentarTodos();
 
             Console.Write("Digite o codigo do triangulo a ser detalhado: ");
             int codigo = Convert.ToInt32(Console.ReadLine());
 
-            var produto = trianguloServico.ObterPorCodigo(codigo);
+            var apresentarTriangulo = trianguloServico.ObterPorCodigo(codigo);
 
-            if (produto == null)
+            if (apresentarTriangulo == null)
             {
-                Console.WriteLine("Produto nao esta cadastrado");
+                Console.WriteLine("triangulo nao esta cadastrado");
                 return;
             }
 

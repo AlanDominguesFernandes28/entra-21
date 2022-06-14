@@ -34,7 +34,7 @@ namespace ExercicioListaObjetos.Exercicio1
 
             codigoAtual = codigoAtual + 1;
 
-            triangulo.Add(triangulo);
+            triangulos.Add(triangulo);
 
             return true;
         }
@@ -56,18 +56,15 @@ namespace ExercicioListaObjetos.Exercicio1
         }
         public bool Apagar(int codigo)
         {
-            for (int i = 0; i < triangulos.Count; i++)
+            Triangulo trianguloParaRemover = ObterPorCodigo(codigo);
+
+            if (trianguloParaRemover == null)
             {
-                Triangulo triangulo = triangulos[i];
-                if (triangulo.codigo == codigo)
-                {
-                    triangulo.Remove(triangulo);
-
-                    return true;
-
-                }
+                return false;
             }
-            return false;
+            triangulos.Remove(trianguloParaRemover);
+
+            return true;
         }
         public List<Triangulo> ObterTodos()
         {
