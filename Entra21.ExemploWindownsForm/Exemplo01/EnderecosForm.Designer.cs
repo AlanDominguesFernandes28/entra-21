@@ -40,6 +40,7 @@
             this.buttonEditar = new System.Windows.Forms.Button();
             this.dataGridViewEnderecos = new System.Windows.Forms.DataGridView();
             this.comboBoxPaciente = new System.Windows.Forms.ComboBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEnderecos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,11 +136,14 @@
             // dataGridViewEnderecos
             // 
             this.dataGridViewEnderecos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEnderecos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
             this.dataGridViewEnderecos.Location = new System.Drawing.Point(12, 40);
             this.dataGridViewEnderecos.Name = "dataGridViewEnderecos";
             this.dataGridViewEnderecos.RowTemplate.Height = 25;
             this.dataGridViewEnderecos.Size = new System.Drawing.Size(407, 308);
             this.dataGridViewEnderecos.TabIndex = 11;
+            this.dataGridViewEnderecos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEnderecos_CellContentClick);
             // 
             // comboBoxPaciente
             // 
@@ -149,6 +153,11 @@
             this.comboBoxPaciente.Size = new System.Drawing.Size(349, 23);
             this.comboBoxPaciente.TabIndex = 12;
             this.comboBoxPaciente.SelectedIndexChanged += new System.EventHandler(this.comboBoxPaciente_SelectedIndexChanged);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
             // 
             // EnderecosForm
             // 
@@ -189,5 +198,6 @@
         private Button buttonEditar;
         private DataGridView dataGridViewEnderecos;
         private ComboBox comboBoxPaciente;
+        private DataGridViewTextBoxColumn Column1;
     }
 }
