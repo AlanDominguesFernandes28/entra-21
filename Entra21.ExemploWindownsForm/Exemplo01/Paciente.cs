@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entra21.ExemploWindownsForm.Exemplo01
+namespace Entra21.ExemplosWindowsForms.Exemplo01
 {
     internal class Paciente
     {
