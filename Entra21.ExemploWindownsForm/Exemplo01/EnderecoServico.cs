@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
- namespace Entra21.ExemploWindownsForm.Exemplo01
- {
+namespace Entra21.ExemplosWindowsForms.Exemplo01
+{
     internal class EnderecoServico
     {
         //http://www.invertexto.com/fsens
@@ -16,10 +16,11 @@ using System.Threading.Tasks;
         public EnderecoServico()
         {
             enderecos = new List<Endereco>();
+
+            LerArquivo();
         }
 
-
-        // metodo adicionar recebe como parametro o objeto do endereco completo do form(controller)
+        // Método Adicionar recebe como parâmetro o objeto do endereço completo do Form(Controller)
         public void Adicionar(Endereco endereco)
         {
             enderecos.Add(endereco);
@@ -47,8 +48,9 @@ using System.Threading.Tasks;
 
                     return;
                 }
+            }
+        }
 
-        }   }
         public void Apagar(Endereco enderecoParaApagar)
         {
             // Percorre a lista de endereços afim de encontrar o endereço que deve ser removido
@@ -67,16 +69,15 @@ using System.Threading.Tasks;
 
                     return;
                 }
-
             }
+        }
 
-
-        }    
-            //metodo que permite listar todos os enderecos
+        // Método que permite listar todos os endereços
         public List<Endereco> ObterTodos()
         {
-                return enderecos;
+            return enderecos;
         }
+
         public Endereco ObterPorCodigo(int codigo)
         {
             // Percorre a lista de endereços afim de encontrar o endereço com o código desejado
@@ -93,11 +94,13 @@ using System.Threading.Tasks;
             // Retorna null pois não encontrou o endereço com o código desejado
             return null;
         }
+
         public void SalvarArquivo()
         {
             var enderecosEmJson = JsonConvert.SerializeObject(enderecos);
             File.WriteAllText("enderecos.json", enderecosEmJson);
         }
+
         public void LerArquivo()
         {
             // Verifica se o endereço não existe
@@ -108,10 +111,6 @@ using System.Threading.Tasks;
             var enderecoEmJson = File.ReadAllText("enderecos.json");
             enderecos = JsonConvert.DeserializeObject<List<Endereco>>(enderecoEmJson);
         }
-
-
-        
     }
+}
 
- }                    
-        
