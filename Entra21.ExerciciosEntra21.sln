@@ -22,6 +22,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A07618EA-F05D-4304-806D-6AAE44C31523}"
 	ProjectSection(SolutionItems) = preProject
 		ExerciciosSQL\ExercicioSQL1.sql = ExerciciosSQL\ExercicioSQL1.sql
+		ExerciciosSQL\ExercicioSQL2.sql = ExerciciosSQL\ExercicioSQL2.sql
 	EndProjectSection
 EndProject
 Global
