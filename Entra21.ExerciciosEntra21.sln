@@ -17,7 +17,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExercicioLista1", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioListaObjetos", "ExercicioListaObjetos\ExercicioListaObjetos.csproj", "{30D4F632-EA91-46B6-B106-5FA46A69BE8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExemploWindownsForm", "Entra21.ExemploWindownsForm\Entra21.ExemploWindownsForm.csproj", "{9BA17F3E-6DB3-41E6-9B7B-193D9C1FB4B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemploWindownsForm", "Entra21.ExemploWindownsForm\Entra21.ExemploWindownsForm.csproj", "{9BA17F3E-6DB3-41E6-9B7B-193D9C1FB4B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A07618EA-F05D-4304-806D-6AAE44C31523}"
+	ProjectSection(SolutionItems) = preProject
+		ExerciciosSQL\ExercicioSQL1.sql = ExerciciosSQL\ExercicioSQL1.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
