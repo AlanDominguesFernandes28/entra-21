@@ -26,6 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lista 1", "Lista 1", "{2BCF
 		ExerciciosSQL\ExercicioSQL1.sql = ExerciciosSQL\ExercicioSQL1.sql
 		ExerciciosSQL\ExercicioSQL2.sql = ExerciciosSQL\ExercicioSQL2.sql
 		ExerciciosSQL\ExercicioSQL3.sql = ExerciciosSQL\ExercicioSQL3.sql
+		\\Server\c#-noturno\alan.fernandes\Desktop\pokemons_estrutura_insert.sql = \\Server\c#-noturno\alan.fernandes\Desktop\pokemons_estrutura_insert.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lista 2", "Lista 2", "{18311281-3A43-4689-ACA9-EF4AD667FBF0}"
