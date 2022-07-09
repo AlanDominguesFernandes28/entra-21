@@ -19,10 +19,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioListaObjetos", "Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemploWindownsForm", "Entra21.ExemploWindownsForm\Entra21.ExemploWindownsForm.csproj", "{9BA17F3E-6DB3-41E6-9B7B-193D9C1FB4B8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A07618EA-F05D-4304-806D-6AAE44C31523}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicios SQL", "Exercicios SQL", "{A07618EA-F05D-4304-806D-6AAE44C31523}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lista 1", "Lista 1", "{2BCF0D2D-D375-436A-A308-3FA7CB3BE8C6}"
 	ProjectSection(SolutionItems) = preProject
 		ExerciciosSQL\ExercicioSQL1.sql = ExerciciosSQL\ExercicioSQL1.sql
 		ExerciciosSQL\ExercicioSQL2.sql = ExerciciosSQL\ExercicioSQL2.sql
+		ExerciciosSQL\ExercicioSQL3.sql = ExerciciosSQL\ExercicioSQL3.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lista 2", "Lista 2", "{18311281-3A43-4689-ACA9-EF4AD667FBF0}"
+	ProjectSection(SolutionItems) = preProject
+		\\Server\c#-noturno\alan.fernandes\Desktop\alunos_estrutura_insert.sql = \\Server\c#-noturno\alan.fernandes\Desktop\alunos_estrutura_insert.sql
+		\\Server\c#-noturno\alan.fernandes\Desktop\cidades_estrutura_insert.sql = \\Server\c#-noturno\alan.fernandes\Desktop\cidades_estrutura_insert.sql
+		\\Server\c#-noturno\alan.fernandes\Desktop\pokemons_estrutura_insert.sql = \\Server\c#-noturno\alan.fernandes\Desktop\pokemons_estrutura_insert.sql
 	EndProjectSection
 EndProject
 Global
@@ -66,6 +76,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2BCF0D2D-D375-436A-A308-3FA7CB3BE8C6} = {A07618EA-F05D-4304-806D-6AAE44C31523}
+		{18311281-3A43-4689-ACA9-EF4AD667FBF0} = {A07618EA-F05D-4304-806D-6AAE44C31523}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B93B55FA-FC59-4297-99FD-0E1694399548}
