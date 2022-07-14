@@ -123,3 +123,72 @@ SELECT
          FROM pedidos AS p
          INNER JOIN clientes AS c ON(P.id_cliente = c.id);
 UPDATE pedidos SET status = 1 WHERE id = 2;
+
+SELECT * FROM pecas;
+
+INSERT INTO pedidos_pecas (id_pedido, id_peca,quantidade) VALUES
+(1,2,2),--2 SSD M2 para o pedido 1
+(1,4,1),--1 GTX 1060 para pedido 1
+(1,6,1);--1 MODULO
+
+--consultar apresentando nome cliente,nome peca,quantidade,vaor untario,total pecas
+SELECT
+       pd.id AS ' Codigo pedido',
+       c.nome AS 'Cliente',
+       p.nome AS 'Peca' , 
+       pp.quantidade AS 'Quantidade',
+       CONCAT('R$ ' ,p.preco_unitario) AS 'Valor unitario ',
+       CONCAT('R$ ', p.preco_unitario * pp.quantidade ) AS 'total das pecas'
+       FROM pedidos_pecas AS pp
+       INNER JOIN pecas AS p ON (pp.id_peca = p.id)
+       INNER JOIN pedidos AS pd ON(pp.id_pedido = pd.id)
+       INNER JOIN  clientes AS c ON(pd.id_cliente = c.id);
+
+INSERT INTO pedidos (id_cliente,data_criacao,status) VALUES
+(1, GETDATE(), 0); --GETDATE() e o mesmo que DATETIME.NOW
+
+SELECT * FROM pedidos;
+
+INSERT INTO pedidos_pecas(id_pedido,id_peca, quantidade) VALUES
+(3,2,2), --id_pedido=3 , id_peca=2 (ssd 240m2), quantidade=2
+(3,3,2), --id_pedido=3, id_peca=3 (rtx3090 ti) , quantidade=2
+(3,5,4);  --id_pedido=3, id_peca=5 (16gb ram ddr5, quantidade=4 quad chanel)
+
+--apresentar informacoes do pedido do cliente claudio
+SELECT
+     p.id AS 'codigo pedido',
+     p.status AS 'status pedido',
+     c.nome AS 'cliente',
+     CONCAT(
+           e.estado, '',
+           e.cidade ,'',
+           e.bairro,'',
+           e.logradouro,'',
+           e.numero) AS 'endereco completo'
+           FROM pedidos AS p
+           INNER JOIN clientes AS c ON(p.id_cliente= c.id)
+           INNER JOIN enderecos AS e ON(c.id =e.id_cliente)
+           WHERE p.id_cliente = (SELECT id FROM clientes WHERE cpf = '070.355.459-73');
+--efetivar a compra do pedido do claudio
+UPDATE pedidos
+       SET
+          status = 2,
+          data_compra = ' 2022-07-12 17:30:00'
+       WHERE
+          id=3;
+SELECT * FROM pedidos;
+
+SELECT
+     p.id AS 'Codigo pedido',
+     p.status AS 'Status pedido',
+     c.nome AS 'Cliente',
+     pec.nome AS 'Peça'
+     FROM pedidos AS p
+     INNER JOIN clientes AS c ON(p.id_cliente= c.id)
+     INNER JOIN pedidos_pecas AS pp ON(p.id = pp.id_pedido)
+     INNER JOIN pecas AS pec ON(pp.id_peca = pec.id)
+     WHERE p.id_cliente = (SELECT id FROM clientes WHERE cpf = '070.355.459-73');
+
+
+
+
