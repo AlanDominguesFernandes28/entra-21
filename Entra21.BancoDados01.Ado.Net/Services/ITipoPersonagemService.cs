@@ -1,5 +1,4 @@
-﻿using Entra21.BancoDados01.Ado.Net.DataBase;
-using Entra21.BancoDados01.Ado.Net.Models;
+﻿using Entra21.BancoDados01.Ado.Net.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +9,10 @@ namespace Entra21.BancoDados01.Ado.Net.Services
 {
     internal interface ITipoPersonagemService
     {
-        public void Apagar(int id);
-       public  void Cadastrar(TipoPersonagem tipoPersonagem);
-
+        void Cadastrar(TipoPersonagem tipoPersonagem);
         List<TipoPersonagem> ObterTodos();
-
+        void Apagar(int id);
+        TipoPersonagem ObterPorId(int id);
+        void Editar(TipoPersonagem tipoPersonagem);
     }
 }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entra21.BancoDados01.Ado.Net.Models
 {
-    public class Editora
+    public  class Personagem
     {
-        // O que é Get set sera apresentado posteriormente
         public int Id { get; set; }
         public string Nome { get; set; }
-        public decimal Faturamento { get; set; }
-        public DateTime DataCriacao { get; set; }
-        public string Apelido { get; set; }
+
+        // Editora e TipoPersonagem será preenchido com INNER JOIN
+        public Editora Editora { get; set; }
+        public TipoPersonagem TipoPersonagem { get; set; }
     }
 }

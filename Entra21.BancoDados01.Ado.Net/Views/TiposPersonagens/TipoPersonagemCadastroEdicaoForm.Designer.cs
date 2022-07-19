@@ -28,58 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Cancelar1 = new System.Windows.Forms.Button();
-            this.Salvar1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelTipo = new System.Windows.Forms.Label();
             this.textBoxTipo = new System.Windows.Forms.TextBox();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Cancelar1
+            // labelTipo
             // 
-            this.Cancelar1.Location = new System.Drawing.Point(434, 157);
-            this.Cancelar1.Name = "Cancelar1";
-            this.Cancelar1.Size = new System.Drawing.Size(94, 29);
-            this.Cancelar1.TabIndex = 0;
-            this.Cancelar1.Text = "Cancelar";
-            this.Cancelar1.UseVisualStyleBackColor = true;
-            // 
-            // Salvar1
-            // 
-            this.Salvar1.Location = new System.Drawing.Point(315, 157);
-            this.Salvar1.Name = "Salvar1";
-            this.Salvar1.Size = new System.Drawing.Size(94, 29);
-            this.Salvar1.TabIndex = 1;
-            this.Salvar1.Text = "Salvar";
-            this.Salvar1.UseVisualStyleBackColor = true;
-            this.Salvar1.Click += new System.EventHandler(this.buttonSalvar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tipo";
+            this.labelTipo.AutoSize = true;
+            this.labelTipo.Location = new System.Drawing.Point(12, 9);
+            this.labelTipo.Name = "labelTipo";
+            this.labelTipo.Size = new System.Drawing.Size(30, 15);
+            this.labelTipo.TabIndex = 0;
+            this.labelTipo.Text = "Tipo";
             // 
             // textBoxTipo
             // 
-            this.textBoxTipo.Location = new System.Drawing.Point(12, 48);
+            this.textBoxTipo.Location = new System.Drawing.Point(12, 27);
             this.textBoxTipo.Name = "textBoxTipo";
-            this.textBoxTipo.Size = new System.Drawing.Size(298, 27);
-            this.textBoxTipo.TabIndex = 3;
+            this.textBoxTipo.Size = new System.Drawing.Size(252, 23);
+            this.textBoxTipo.TabIndex = 1;
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Location = new System.Drawing.Point(108, 56);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancelar.TabIndex = 2;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            // 
+            // buttonSalvar
+            // 
+            this.buttonSalvar.Location = new System.Drawing.Point(189, 56);
+            this.buttonSalvar.Name = "buttonSalvar";
+            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalvar.TabIndex = 3;
+            this.buttonSalvar.Text = "Salvar";
+            this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // TipoPersonagemCadastroEdicaoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 198);
+            this.ClientSize = new System.Drawing.Size(287, 91);
+            this.Controls.Add(this.buttonSalvar);
+            this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.textBoxTipo);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Salvar1);
-            this.Controls.Add(this.Cancelar1);
+            this.Controls.Add(this.labelTipo);
             this.Name = "TipoPersonagemCadastroEdicaoForm";
-            this.Text = "Tipo de Personagens";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro/Edição Tipo de Personagem";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,9 +88,9 @@
 
         #endregion
 
-        private Button Cancelar1;
-        private Button Salvar1;
-        private Label label1;
+        private Label labelTipo;
         private TextBox textBoxTipo;
+        private Button buttonCancelar;
+        private Button buttonSalvar;
     }
 }
