@@ -30,13 +30,14 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(493, 203);
+            this.button1.Location = new System.Drawing.Point(146, 22);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(94, 238);
             this.button1.TabIndex = 0;
             this.button1.Text = "Personagem";
             this.button1.UseVisualStyleBackColor = true;
@@ -44,22 +45,32 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(297, 153);
+            this.button2.Location = new System.Drawing.Point(277, 22);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(95, 238);
             this.button2.TabIndex = 1;
             this.button2.Text = "Tipo Personagem";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // MenuPricipalForm
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 120);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // MenuPrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 315);
+            this.ClientSize = new System.Drawing.Size(401, 315);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "MenuPricipalForm";
+            this.Name = "MenuPrincipalForm";
             this.Text = "MenuPricipalForm";
             this.ResumeLayout(false);
 
@@ -69,5 +80,6 @@
 
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }

@@ -42,6 +42,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLExemplo", "SQLExemplo", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.BancoDados01.Ado.Net", "Entra21.BancoDados01.Ado.Net\Entra21.BancoDados01.Ado.Net.csproj", "{3AA1BE1E-2E4E-4CC8-96AC-A04C77DF620E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExercicioBanco", "ExercicioBanco", "{9A8C6A3F-A880-43D9-B20F-2457120F26AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioBancoDados", "ExercicioBancoDados\ExercicioBancoDados.csproj", "{E9435B6F-D7E1-4162-A0C2-789EE89C92B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +88,10 @@ Global
 		{3AA1BE1E-2E4E-4CC8-96AC-A04C77DF620E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AA1BE1E-2E4E-4CC8-96AC-A04C77DF620E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AA1BE1E-2E4E-4CC8-96AC-A04C77DF620E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9435B6F-D7E1-4162-A0C2-789EE89C92B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9435B6F-D7E1-4162-A0C2-789EE89C92B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9435B6F-D7E1-4162-A0C2-789EE89C92B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9435B6F-D7E1-4162-A0C2-789EE89C92B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +99,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2BCF0D2D-D375-436A-A308-3FA7CB3BE8C6} = {0C3EC7B3-FA77-45A8-8326-4943FA0B4FD6}
 		{18311281-3A43-4689-ACA9-EF4AD667FBF0} = {0C3EC7B3-FA77-45A8-8326-4943FA0B4FD6}
+		{E9435B6F-D7E1-4162-A0C2-789EE89C92B5} = {9A8C6A3F-A880-43D9-B20F-2457120F26AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B93B55FA-FC59-4297-99FD-0E1694399548}
